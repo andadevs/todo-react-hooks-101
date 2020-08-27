@@ -11,7 +11,7 @@
 import { Carousel, Typography } from "antd";
 //#endregion
 //#region components
-import { PgDemo } from "../pages/Slides";
+import PgDemo from "../pages/Slides/Demo";
 //#endregion
 
 const { Title } = Typography;
