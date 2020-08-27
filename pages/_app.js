@@ -7,6 +7,9 @@
  * @author boykland/clenondavis <clenondavis@outlook.com>
  */
 
+//#region Components
+import { TskLayout } from "../components/presentational";
+//#endregion
 //#region styles
 import "../styles/_general.scss";
 import "antd/dist/antd.css";
@@ -22,7 +25,11 @@ import "antd/dist/antd.css";
  */
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <TskLayout>
+      <Component {...pageProps} />
+    </TskLayout>
+  );
 }
 
 export default MyApp;

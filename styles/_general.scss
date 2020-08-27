@@ -1,7 +1,41 @@
+//styles
+@import "./helpers";
+//colors
+$primary-color: #212e51;
+
 html {
   font-family: "Roboto", sans-serif;
 }
 
 body {
   margin: 0;
+}
+
+#__next,
+.ant-layout,
+.ant-layout-content,
+.ant-carousel,
+.slick-slider,
+.slick-list,
+.slick-track,
+.slick-slide > div:first-child {
+  height: 100%;
+}
+
+.bckg {
+  &--color {
+    &--primary {
+      background-color: $primary-color;
+    }
+  }
+}
+
+.input {
+  &--search {
+    &--none-icon {
+      .ant-input-suffix {
+        display: none;
+      }
+    }
+  }
 }

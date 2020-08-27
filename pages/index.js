@@ -8,8 +8,13 @@
  */
 
 //#region dependencies
-import { Carousel } from "antd";
+import { Carousel, Typography } from "antd";
 //#endregion
+//#region components
+import { PgDemo } from "../pages/Slides";
+//#endregion
+
+const { Title } = Typography;
 
 /**
  * @function
@@ -32,18 +37,19 @@ export default function Main() {
   }
 
   return (
-    <Carousel afterChange={onChange}>
+    <Carousel className afterChange={onChange}>
+      <PgDemo />
       <div>
-        <h3 style={contentStyle}>1</h3>
+        <Title>First Slide</Title>
       </div>
       <div>
-        <h3 style={contentStyle}>2</h3>
+        <Title>Second Slide - Intro - Imperative</Title>
       </div>
       <div>
-        <h3 style={contentStyle}>3</h3>
+        <Title>Third Slide - Intro - Functional</Title>
       </div>
       <div>
-        <h3 style={contentStyle}>4</h3>
+        <Title>Fourth Slide - Context</Title>
       </div>
     </Carousel>
   );
